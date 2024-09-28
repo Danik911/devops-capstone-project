@@ -64,8 +64,9 @@ def create_accounts():
 @app.route("/accounts", methods=["GET"])
 def list_accounts():
     """
-    List all Accounts
-    This endpoint will list all Accounts
+    List all Accounts.
+    
+    This endpoint will list all Accounts.
     """
     app.logger.info("Request to list Accounts")
     accounts = Account.all()
